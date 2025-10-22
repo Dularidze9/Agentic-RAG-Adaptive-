@@ -1,4 +1,4 @@
-# Agentic Adaptive RAG with LangGraph
+# Agentic Adaptive RAG with LangGraph (აგენტური რაგ ჩატბოტი)
 
  RAG systems that know when to retrieve documents, search the web, or generate responses directly
 
@@ -63,23 +63,6 @@ The system implements intelligent decision-making at multiple points:
 - Grades document relevance and triggers web search for insufficient results
 - Detects hallucinations and regenerates responses when needed
 - Evaluates answer quality and seeks additional information if required
-
-##  Configuration
-
-### Model Configuration
-
-Edit `model.py` to customize your language and embedding models:
-
-```python
-# Language Model Options
-from langchain_aws import ChatBedrock
-from langchain_google_genai import GoogleGenerativeAIEmbeddings
-
-llm_model = ChatBedrock(model_id="us.anthropic.claude-3-5-sonnet-20241022-v2:0")
-embed_model = GoogleGenerativeAIEmbeddings(model="models/text-embedding-004")
-```
-
-
 
 ## Performance Optimization
 
